@@ -1,0 +1,7 @@
+<http://data.bioversityinternational.org/collectingmissions/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://xmlns.com/foaf/0.1/homepage> <http://bioversity.github.io/geosite/> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://purl.org/dc/terms/title> "Bioversity Collecting Missions"@en .
+<http://data.bioversityinternational.org/collectingmissions/> <http://purl.org/dc/terms/description> "Access to original passport data of more than 220,000 samples \n    collected around the world during Bioversity International* supported missions. \n    About 150,000 samples are currently geo-referenced and can be displayed on \n    the map to the right."@en .
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/collectingmissions/> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#dataDump> <https://logd-germplasm.googlecode.com/git/collecting-missions-11-04-2014.nt.gz> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#triples> "6755639"^^<http://www.w3.org/2001/XMLSchema#integer> .

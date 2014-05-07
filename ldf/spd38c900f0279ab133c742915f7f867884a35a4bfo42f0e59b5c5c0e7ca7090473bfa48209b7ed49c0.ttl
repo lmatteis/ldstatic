@@ -1,0 +1,1 @@
+<http://www.genesys-pgr.org/> <http://rdfs.org/ns/void#triples> "13354152"^^<http://www.w3.org/2001/XMLSchema#integer> .

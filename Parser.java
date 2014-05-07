@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+import org.apache.commons.codec.digest.DigestUtils;
+
 import org.apache.jena.atlas.lib.Sink ;
 import org.apache.jena.riot.RDFDataMgr ;
 import org.apache.jena.riot.out.SinkTripleOutput ;
@@ -79,25 +81,28 @@ public class Parser
             // print all combinations
             try {
                 // only subject
-                savePage("s" + subject + "po", triple);
+                savePage("s" + sha1(subject) + "po", triple);
                 // subject and predicate
-                savePage("s" + subject + "p" + predicate + "o", triple);
+                savePage("s" + sha1(subject) + "p" + sha1(predicate) + "o", triple);
                 // subject and object
-                savePage("s" + subject + "po" + object, triple);
+                savePage("s" + sha1(subject) + "po" + sha1(object), triple);
                 // subject, predicate and object
-                savePage("s" + subject + "p" + predicate + "o" + object, triple);
+                savePage("s" + sha1(subject) + "p" + sha1(predicate) + "o" + sha1(object), triple);
 
                 // only predicate
-                savePage("sp" + predicate + "o", triple);
+                savePage("sp" + sha1(predicate) + "o", triple);
                 // predicate and subject
                 // predicate and object
-                savePage("sp" + predicate + "o" + object, triple);
+                savePage("sp" + sha1(predicate) + "o" + sha1(object), triple);
                 // predicate, subject and object
 
                 // only object
-                savePage("spo" + object, triple);
+                savePage("spo" + sha1(object), triple);
                 // object and subject
                 // object and predicate
+
+                // all
+                savePage("spo", triple);
             } catch(UnsupportedEncodingException e) {
             }
         }
@@ -112,7 +117,7 @@ public class Parser
             // N-triples.
             try {
                 // append
-                FileOutputStream fileOutStream = new FileOutputStream("ldf/" + encode(filename), true); 
+                FileOutputStream fileOutStream = new FileOutputStream("ldf/" + filename + ".ttl", true); 
 
                 RDFDataMgr.writeTriples(fileOutStream, Collections.singleton(triple).iterator());
 
@@ -125,6 +130,9 @@ public class Parser
 
         private String encode(String s) throws UnsupportedEncodingException {
             return URLEncoder.encode(s, "UTF-8");
+        }
+        private String sha1(String s) {
+            return DigestUtils.shaHex(s);
         }
         
         @Override

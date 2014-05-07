@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Linked Data Fragments client</title>
+  <script src="scripts/sha1.js"></script>
   <script src="scripts/jquery-2.1.0.js"></script>
   <script src="scripts/ldf-client.js"></script>
   <script src="scripts/ldf-client-ui.js"></script>
@@ -22,7 +23,7 @@
   <fieldset class="ldf-client">
     <textarea class="query">
 SELECT ?p ?o WHERE {
-    <a:foo> ?p ?o
+    ?s ?p ?o
 }
         
     

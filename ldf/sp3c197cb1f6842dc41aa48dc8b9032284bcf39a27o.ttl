@@ -1,0 +1,3 @@
+<http://www.genesys-pgr.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Linkset> .

@@ -1,0 +1,2 @@
+<http://www.genesys-pgr.org/> <http://purl.org/dc/terms/description> "Genesys is a global portal to information about \n    plant genetic resources for food and agriculture."@en .
+<http://data.bioversityinternational.org/collectingmissions/> <http://purl.org/dc/terms/description> "Access to original passport data of more than 220,000 samples \n    collected around the world during Bioversity International* supported missions. \n    About 150,000 samples are currently geo-referenced and can be displayed on \n    the map to the right."@en .

@@ -1,0 +1,18 @@
+<http://www.genesys-pgr.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://www.genesys-pgr.org/> <http://xmlns.com/foaf/0.1/homepage> <http://www.genesys-pgr.org/> .
+<http://www.genesys-pgr.org/> <http://purl.org/dc/terms/title> "GeneSys"@en .
+<http://www.genesys-pgr.org/> <http://purl.org/dc/terms/description> "Genesys is a global portal to information about \n    plant genetic resources for food and agriculture."@en .
+<http://www.genesys-pgr.org/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/genesys-scraped/> .
+<http://www.genesys-pgr.org/> <http://rdfs.org/ns/void#triples> "13354152"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://xmlns.com/foaf/0.1/homepage> <http://bioversity.github.io/geosite/> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://purl.org/dc/terms/title> "Bioversity Collecting Missions"@en .
+<http://data.bioversityinternational.org/collectingmissions/> <http://purl.org/dc/terms/description> "Access to original passport data of more than 220,000 samples \n    collected around the world during Bioversity International* supported missions. \n    About 150,000 samples are currently geo-referenced and can be displayed on \n    the map to the right."@en .
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/collectingmissions/> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#dataDump> <https://logd-germplasm.googlecode.com/git/collecting-missions-11-04-2014.nt.gz> .
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#triples> "6755639"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Linkset> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://rdfs.org/ns/void#subjectsTarget> <http://www.genesys-pgr.org/> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://rdfs.org/ns/void#objectsTarget> <http://data.bioversityinternational.org/collectingmissions/> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://rdfs.org/ns/void#dataDump> <https://logd-germplasm.googlecode.com/git/links-genesys-missions.jsonld.gz> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://rdfs.org/ns/void#triples> "40647"^^<http://www.w3.org/2001/XMLSchema#integer> .

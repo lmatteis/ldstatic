@@ -313,9 +313,10 @@ TurtleFragmentParser.prototype.parseControls = function (controlData) {
     // Gets the URL of the basic Linked Data Fragment with the given triple pattern
     controls.getFragmentUrl = function (triplePattern) {
       var variables = {};
-      variables[mappings[rdf.RDF + 'subject']]   = triplePattern.subject;
-      variables[mappings[rdf.RDF + 'predicate']] = triplePattern.predicate;
-      variables[mappings[rdf.RDF + 'object']]    = triplePattern.object;
+      // XXX here we can add the hash
+      variables[mappings[rdf.RDF + 'subject']]   = triplePattern.subject ? CryptoJS.SHA1(triplePattern.subject).toString() : null ;
+      variables[mappings[rdf.RDF + 'predicate']] = triplePattern.predicate ? CryptoJS.SHA1(triplePattern.predicate).toString() : null;
+      variables[mappings[rdf.RDF + 'object']]    = triplePattern.object ? CryptoJS.SHA1(triplePattern.object).toString() : null;
       return searchTemplate.expand(variables);
     };
   }

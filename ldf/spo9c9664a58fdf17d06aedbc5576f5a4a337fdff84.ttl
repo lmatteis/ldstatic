@@ -1,0 +1,2 @@
+<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/collectingmissions/> .
+<https://logd-germplasm.googlecode.com/git/void.ttl#genesys2collectingmissions> <http://rdfs.org/ns/void#objectsTarget> <http://data.bioversityinternational.org/collectingmissions/> .
