@@ -325,7 +325,7 @@ TurtleFragmentParser.prototype.parseControls = function (controlData) {
 
 // Indicates whether the class supports the content type
 TurtleFragmentParser.supportsContentType = function (contentType) {
-  return /^(?:text\/turtle|text\/plain|text\/n3|application\/n-triples)$/.test(contentType);
+  return /^(?:text\/turtle|text\/plain|application\/octet-stream|text\/n3|application\/n-triples)$/.test(contentType);
 };
 
 // Default hypermedia controls for fragments
