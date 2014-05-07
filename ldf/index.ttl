@@ -2,9 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix hydra: <http://www.w3.org/ns/hydra/core#>.
 @prefix void: <http://rdfs.org/ns/void#>.
-@prefix : <#>.
+@prefix : <http://foo.org/>.
 
-:foo a void:Dataset, hydra:Collection;
+:a a void:Dataset, hydra:Collection;
     void:uriLookupEndpoint "ldf/s{s}p{p}o{o}.ttl";
     hydra:search _:triplePattern.
 _:triplePattern hydra:template "ldf/s{s}p{p}o{o}.ttl";

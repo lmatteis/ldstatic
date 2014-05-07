@@ -3,5 +3,5 @@
 @prefix hydra: <http://www.w3.org/ns/hydra/core#>.
 @prefix void: <http://rdfs.org/ns/void#>.
 
-<foo> <bar> "luca" .
+<a:foo> <bar> "luca" .
 
