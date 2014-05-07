@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix dbpedia: <http://dbpedia.org/resource/>.
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/>.
+@prefix dbpprop: <http://dbpedia.org/property/>.
+@prefix hydra: <http://www.w3.org/ns/hydra/core#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix : <http://data.linkeddatafragments.org/>.
+
+<http://dbpedia.org/resource/!!!> dbpedia-owl:activeYearsStartYear "1996"^^xsd:gYear;
+    dbpedia-owl:associatedBand dbpedia:The_Juan_MacLean, <http://dbpedia.org/resource/Maserati_(band)>, dbpedia:Out_Hud, <http://dbpedia.org/resource/Turing_Machine_(band)>, dbpedia:LCD_Soundsystem;
+    dbpedia-owl:associatedMusicalArtist <http://dbpedia.org/resource/Maserati_(band)>, <http://dbpedia.org/resource/Turing_Machine_(band)>, dbpedia:The_Juan_MacLean, dbpedia:LCD_Soundsystem, dbpedia:Out_Hud;
+    dbpedia-owl:background "group_or_band"@en;
+    dbpedia-owl:bandMember dbpedia:Nic_Offer;
+    dbpedia-owl:formerBandMember dbpedia:Justin_Van_Der_Volgen, dbpedia:Jerry_Fuchs;
+    dbpedia-owl:genre dbpedia:Dance-punk, dbpedia:Post-punk_revival, dbpedia:Indie_rock;
+    dbpedia-owl:hometown <http://dbpedia.org/resource/Sacramento,_California>;
+    dbpedia-owl:recordLabel <http://dbpedia.org/resource/Warp_(record_label)>, dbpedia:Touch_and_Go_Records, dbpedia:Gold_Standard_Laboratories;
+    dbpedia-owl:thumbnail <http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Chkchkchk.jpg/200px-Chkchkchk.jpg>;
+    dbpedia-owl:wikiPageExternalLink <http://auralstates.com/2007/10/interview-aka-chk-chk-chk-w-nic-offer.html>, <http://www.chkchkchk.net/>, <http://www.npr.org/templates/story/story.php?storyId=10236467>, <http://supersweet.org/main.aspx?atype=1&aname=Music_Chk_Chk_Chk&con=1&sc1=0&sc2=0>, <http://punkcast.com/423/>;
+    dbpedia-owl:wikiPageID "600744"^^xsd:integer;
+    dbpedia-owl:wikiPageInterLanguageLink <http://sr.dbpedia.org/resource/!!!>, <http://no.dbpedia.org/resource/!!!>, <http://sv.dbpedia.org/resource/!!!>, <http://pt.dbpedia.org/resource/!!!>, <http://fi.dbpedia.org/resource/!!!>, <http://et.dbpedia.org/resource/!!!>, <http://nl.dbpedia.org/resource/!!!>, <http://de.dbpedia.org/resource/!!!>, <http://fr.dbpedia.org/resource/!!!>, <http://gl.dbpedia.org/resource/!!!>, <http://ru.dbpedia.org/resource/!!!>, <http://it.dbpedia.org/resource/!!!>, <http://da.dbpedia.org/resource/!!!>, <http://es.dbpedia.org/resource/!!!>, <http://ja.dbpedia.org/resource/!!!>, <http://pl.dbpedia.org/resource/!!!>, <http://ko.dbpedia.org/resource/!!!>, <http://eo.dbpedia.org/resource/!!!>, <http://uk.dbpedia.org/resource/!!!>, <http://hr.dbpedia.org/resource/!!!>, <http://th.dbpedia.org/resource/!!!>;
+    dbpedia-owl:wikiPageRevisionID "495348352"^^xsd:integer;
+    dbpedia-owl:wikiPageWikiLink dbpedia:Bassline, <http://dbpedia.org/resource/Category:Rock_music_groups_from_California>, <http://dbpedia.org/resource/Category:Post-punk_revival_music_groups>, dbpedia:Bushmen, <http://dbpedia.org/resource/Category:Warp_Records_artists>, <http://dbpedia.org/resource/Cake_(band)>, <http://dbpedia.org/resource/Category:Dance-punk_musical_groups>, dbpedia:Click_consonant, <http://dbpedia.org/resource/!!!_(album)>, dbpedia:Billboard_200, <http://dbpedia.org/resource/Category:Musical_groups_established_in_1996>.
+<http://data.linkeddatafragments.org/dbpedia#dataset> a void:Dataset, hydra:Collection;
+    void:subset :dbpedia;
+    void:uriLookupEndpoint "http://data.linkeddatafragments.org/dbpedia{?subject,predicate,object}";
+    hydra:search _:triplePattern.
+_:triplePattern hydra:template "http://data.linkeddatafragments.org/dbpedia{?subject,predicate,object}";
+    hydra:mapping _:subject, _:predicate, _:object.
+_:subject hydra:variable "subject";
+    hydra:property rdf:subject.
+_:predicate hydra:variable "predicate";
+    hydra:property rdf:predicate.
+_:object hydra:variable "object";
+    hydra:property rdf:object.
+:dbpedia a hydra:Collection, hydra:PagedCollection;
+    dcterms:title "A 'dbpedia' Linked Data Fragment"@en;
+    dcterms:description "Basic Linked Data Fragment of the 'dbpedia' dataset containing triples matching the pattern { ?s ?p ?o }."@en;
+    dcterms:source <http://data.linkeddatafragments.org/dbpedia#dataset>;
+    hydra:totalItems "427670470"^^xsd:integer;
+    void:triples "427670470"^^xsd:integer;
+    hydra:itemsPerPage "100"^^xsd:integer;
+    hydra:firstPage <http://data.linkeddatafragments.org/dbpedia?subject=&predicate=&object=&page=1>;
+    hydra:nextPage <http://data.linkeddatafragments.org/dbpedia?subject=&predicate=&object=&page=2>.
+<http://dbpedia.org/resource/!> rdfs:label "!"@en;
+    dbpedia-owl:wikiPageID "5878274"^^xsd:integer;
+    dbpedia-owl:wikiPageRedirects dbpedia:Exclamation_mark;
+    dbpedia-owl:wikiPageRevisionID "489132637"^^xsd:integer;
+    dbpedia-owl:wikiPageWikiLink dbpedia:Exclamation_mark;
+    <http://www.w3.org/ns/prov#wasDerivedFrom> <http://en.wikipedia.org/wiki/!?oldid=489132637>;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/!>.
+<http://dbpedia.org/resource/!!> rdfs:label "!!"@en;
+    rdfs:seeAlso <http://ru.dbpedia.org/resource/%5Cu0424%5Cu0430%5Cu043A%5Cu0442%5Cu043E%5Cu0440%5Cu0438%5Cu0430%5Cu043B>;
+    dbpedia-owl:wikiPageDisambiguates <http://dbpedia.org/resource/!!!>;
+    dbpedia-owl:wikiPageID "3632887"^^xsd:integer;
+    dbpedia-owl:wikiPageInterLanguageLink <http://ko.dbpedia.org/resource/!!>, <http://eo.dbpedia.org/resource/!!>, <http://ru.dbpedia.org/resource/%5Cu0424%5Cu0430%5Cu043A%5Cu0442%5Cu043E%5Cu0440%5Cu0438%5Cu0430%5Cu043B>, <http://it.dbpedia.org/resource/!!>, <http://fr.dbpedia.org/resource/!!>, <http://es.dbpedia.org/resource/!!>, <http://de.dbpedia.org/resource/!!>, <http://zh.dbpedia.org/resource/!!>;
+    dbpedia-owl:wikiPageRevisionID "494967695"^^xsd:integer;
+    dbpedia-owl:wikiPageWikiLink dbpedia:Factorial, dbpedia:Retroflex_clicks, <http://dbpedia.org/resource/!_(disambiguation)>, <http://dbpedia.org/resource/Punctuation_(chess)>, dbpedia:Exclamation_mark, dbpedia:Boolean_data_type, <http://dbpedia.org/resource/Haskell_(programming_language)>, dbpedia:Double_negative, <http://dbpedia.org/resource/!!!>;
+    owl:sameAs <http://es.dbpedia.org/resource/!!>, <http://ko.dbpedia.org/resource/!!>, <http://it.dbpedia.org/resource/!!>, <http://de.dbpedia.org/resource/!!>, <http://eo.dbpedia.org/resource/!!>, <http://fr.dbpedia.org/resource/!!>, <http://zh.dbpedia.org/resource/!!>;
+    <http://www.w3.org/ns/prov#wasDerivedFrom> <http://en.wikipedia.org/wiki/!!?oldid=494967695>;
+    foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/!!>.
+

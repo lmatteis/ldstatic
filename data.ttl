@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <https://logd-germplasm.googlecode.com/git/void.ttl#> .
+
+<http://www.genesys-pgr.org/> a void:Dataset ;
+    foaf:homepage <http://www.genesys-pgr.org/>;
+    dcterms:title "GeneSys"@en;
+    dcterms:description """Genesys is a global portal to information about 
+    plant genetic resources for food and agriculture."""@en;
+    void:sparqlEndpoint <http://data.bioversityinternational.org/genesys-scraped/>;
+    void:triples 13354152  .
+
+<http://data.bioversityinternational.org/collectingmissions/> a void:Dataset ;
+    foaf:homepage <http://bioversity.github.io/geosite/>;
+    dcterms:title "Bioversity Collecting Missions"@en;
+    dcterms:description """Access to original passport data of more than 220,000 samples 
+    collected around the world during Bioversity International* supported missions. 
+    About 150,000 samples are currently geo-referenced and can be displayed on 
+    the map to the right."""@en;
+    void:sparqlEndpoint <http://data.bioversityinternational.org/collectingmissions/>;
+    void:dataDump <https://logd-germplasm.googlecode.com/git/collecting-missions-11-04-2014.nt.gz>;
+    void:triples 6755639  .
+
+:genesys2collectingmissions a void:Linkset ;
+    void:subjectsTarget <http://www.genesys-pgr.org/> ;
+    void:objectsTarget <http://data.bioversityinternational.org/collectingmissions/>;
+    void:dataDump <https://logd-germplasm.googlecode.com/git/links-genesys-missions.jsonld.gz>;
+    void:triples 40647 .
