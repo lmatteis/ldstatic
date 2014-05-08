@@ -24,7 +24,7 @@ _:object hydra:variable "o";
 <http://lmatteis.github.io/ldstatic/ldf/s23e18cb4964b167713dc43c091358201d211fa2cp3c197cb1f6842dc41aa48dc8b9032284bcf39a27oeb22edbbf1e4a0cbc694914014399e4c66ebe21c.ttl> 
     a hydra:Collection, hydra:PagedCollection;
     dcterms:source :a;
-    hydra:totalItems "53"^^xsd:integer;
-    void:triples "53"^^xsd:integer;
-    hydra:itemsPerPage "100"^^xsd:integer
+    hydra:totalItems "1"^^xsd:integer;
+    void:triples "1"^^xsd:integer;
+    hydra:itemsPerPage "1"^^xsd:integer
     .

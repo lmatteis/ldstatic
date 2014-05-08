@@ -44,7 +44,7 @@
 <http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://xmlns.com/foaf/0.1/name> "Jennifer Golbeck" .
 <http://www.w3.org/People/Berners-Lee/card#amy> <http://xmlns.com/foaf/0.1/name> "Amy van der Hiel" .
 <http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/name> "Tim Berners-Lee" .
-_:BX2D125000aeX3A145dc5cac5aX3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny Ayers" .
+_:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny Ayers" .
 <http://www.w3.org/People/Connolly/#me> <http://xmlns.com/foaf/0.1/name> "Dan Connolly" .
 <http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/name> "Eric Miller" .
 <http://www.w3.org/People/Jacobs/contact.rdf#IanJacobs> <http://xmlns.com/foaf/0.1/name> "Ian Jacobs" .
@@ -78,5 +78,5 @@ _:object hydra:variable "o";
     dcterms:source :a;
     hydra:totalItems "53"^^xsd:integer;
     void:triples "53"^^xsd:integer;
-    hydra:itemsPerPage "100"^^xsd:integer
+    hydra:itemsPerPage "53"^^xsd:integer
     .

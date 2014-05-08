@@ -1,4 +1,4 @@
-_:BX2D125000aeX3A145dc5cac5aX3AX2D7fff <http://xmlns.com/foaf/0.1/mbox_sha1sum> "669fe353dbef63d12ba11f69ace8acbec1ac8b17" .
+_:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://xmlns.com/foaf/0.1/mbox_sha1sum> "669fe353dbef63d12ba11f69ace8acbec1ac8b17" .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix hydra: <http://www.w3.org/ns/hydra/core#>.
@@ -24,7 +24,7 @@ _:object hydra:variable "o";
 <http://lmatteis.github.io/ldstatic/ldf/spdae782d01bc01888be0e30e8c35b6b98c2ca1783o368ff6cb52d12c85a8e668f76e1593fd30a611e4.ttl> 
     a hydra:Collection, hydra:PagedCollection;
     dcterms:source :a;
-    hydra:totalItems "53"^^xsd:integer;
-    void:triples "53"^^xsd:integer;
-    hydra:itemsPerPage "100"^^xsd:integer
+    hydra:totalItems "1"^^xsd:integer;
+    void:triples "1"^^xsd:integer;
+    hydra:itemsPerPage "1"^^xsd:integer
     .

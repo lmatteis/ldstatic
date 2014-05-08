@@ -1,4 +1,4 @@
-_:BX2D125000aeX3A145dc5cac5aX3AX2D7fff <http://xmlns.com/foaf/0.1/mbox_sha1sum> "669fe353dbef63d12ba11f69ace8acbec1ac8b17" .
+<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> _:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix hydra: <http://www.w3.org/ns/hydra/core#>.
@@ -8,7 +8,7 @@ _:BX2D125000aeX3A145dc5cac5aX3AX2D7fff <http://xmlns.com/foaf/0.1/mbox_sha1sum> 
 @prefix : <http://foo.org/>.
 
 :a a void:Dataset, hydra:Collection;
-    void:subset <http://lmatteis.github.io/ldstatic/ldf/s07a1a51330b89ebeaa58b91ab38efc4cebcc9bf3po368ff6cb52d12c85a8e668f76e1593fd30a611e4.ttl>;
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/s23e18cb4964b167713dc43c091358201d211fa2cp5bbc69f1e8ac6849a1c6e2974393d8ea4340921foed63bad1279629d1753af450076a1b5ffa2c0e5c.ttl>;
     void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
     hydra:search _:triplePattern.
 _:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
@@ -21,10 +21,10 @@ _:object hydra:variable "o";
     hydra:property rdf:object
     .
 
-<http://lmatteis.github.io/ldstatic/ldf/s07a1a51330b89ebeaa58b91ab38efc4cebcc9bf3po368ff6cb52d12c85a8e668f76e1593fd30a611e4.ttl> 
+<http://lmatteis.github.io/ldstatic/ldf/s23e18cb4964b167713dc43c091358201d211fa2cp5bbc69f1e8ac6849a1c6e2974393d8ea4340921foed63bad1279629d1753af450076a1b5ffa2c0e5c.ttl> 
     a hydra:Collection, hydra:PagedCollection;
     dcterms:source :a;
-    hydra:totalItems "53"^^xsd:integer;
-    void:triples "53"^^xsd:integer;
-    hydra:itemsPerPage "100"^^xsd:integer
+    hydra:totalItems "1"^^xsd:integer;
+    void:triples "1"^^xsd:integer;
+    hydra:itemsPerPage "1"^^xsd:integer
     .

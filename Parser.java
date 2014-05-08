@@ -61,7 +61,7 @@ public class Parser
             try {
                 FileOutputStream fileOutStream = new FileOutputStream(child, true); 
                 writer = new BufferedWriter(new OutputStreamWriter(fileOutStream, "utf-8"));
-                writer.write(controls(child.getName(), uri));
+                writer.write(controls(child, uri));
             } catch (IOException ex) {
               // report
             } finally {
@@ -73,14 +73,25 @@ public class Parser
         try {
             FileOutputStream fileOutStream = new FileOutputStream("ldf/start.ttl"); 
             writer = new BufferedWriter(new OutputStreamWriter(fileOutStream, "utf-8"));
-            writer.write(controls("start.ttl", uri));
+            writer.write(controls(new File("start.ttl"), uri));
         } catch (IOException ex) {
           // report
         } finally {
            try {writer.close();} catch (Exception ex) {}
         }
     }
-    public static String controls(String fileName, String uri) {
+    public static String controls(File file, String uri) {
+        String fileName = file.getName();
+        int numOfLines = 0;
+        try {
+            LineNumberReader lnr = new LineNumberReader(new FileReader(file));
+            lnr.skip(Long.MAX_VALUE);
+            numOfLines = lnr.getLineNumber();
+            lnr.close();
+        } catch(IOException ex) {
+        } finally {
+            // Finally, the LineNumberReader object should be closed to prevent resource leak
+        }
 String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.\n"
 + "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.\n"
 + "@prefix hydra: <http://www.w3.org/ns/hydra/core#>.\n"
@@ -106,9 +117,9 @@ String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 + "<"+uri + fileName+"> \n"
 + "    a hydra:Collection, hydra:PagedCollection;\n"
 + "    dcterms:source :a;\n"
-+ "    hydra:totalItems \"53\"^^xsd:integer;\n"
-+ "    void:triples \"53\"^^xsd:integer;\n"
-+ "    hydra:itemsPerPage \"100\"^^xsd:integer\n"
++ "    hydra:totalItems \""+numOfLines+"\"^^xsd:integer;\n"
++ "    void:triples \""+numOfLines+"\"^^xsd:integer;\n"
++ "    hydra:itemsPerPage \""+numOfLines+"\"^^xsd:integer\n"
 + "    .\n";
         return dataToWrite;
     }
