@@ -42,6 +42,7 @@ public class Parser
     public static void main(String...argv)
     {
         String filename = argv[0];
+        String uri = argv[1];
 
         // This is the heart of N-triples printing ... outoput is heavily buffered
         // so the FilterSinkRDF called flush at the end of parsing.
@@ -53,6 +54,63 @@ public class Parser
 
         // after all files are created add metadata and controls to each file 
         // (split into different files if necessary)
+        File dir = new File("ldf/");
+        File[] directoryListing = dir.listFiles();
+        for(File child : directoryListing) {
+            Writer writer = null;
+            try {
+                FileOutputStream fileOutStream = new FileOutputStream(child, true); 
+                writer = new BufferedWriter(new OutputStreamWriter(fileOutStream, "utf-8"));
+                writer.write(controls(child.getName(), uri));
+            } catch (IOException ex) {
+              // report
+            } finally {
+               try {writer.close();} catch (Exception ex) {}
+            }
+        }
+        // write start.ttl as a fragment to start from
+        Writer writer = null;
+        try {
+            FileOutputStream fileOutStream = new FileOutputStream("ldf/start.ttl"); 
+            writer = new BufferedWriter(new OutputStreamWriter(fileOutStream, "utf-8"));
+            writer.write(controls("start.ttl", uri));
+        } catch (IOException ex) {
+          // report
+        } finally {
+           try {writer.close();} catch (Exception ex) {}
+        }
+    }
+    public static String controls(String fileName, String uri) {
+String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.\n"
++ "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.\n"
++ "@prefix hydra: <http://www.w3.org/ns/hydra/core#>.\n"
++ "@prefix void: <http://rdfs.org/ns/void#>.\n"
++ "@prefix dcterms: <http://purl.org/dc/terms/>.\n"
++ "@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n"
++ "@prefix : <http://foo.org/>.\n"
++ "\n"
++ ":a a void:Dataset, hydra:Collection;\n"
++ "    void:subset <"+uri+fileName+">;\n"
++ "    void:uriLookupEndpoint \""+uri+"s{s}p{p}o{o}.ttl\";\n"
++ "    hydra:search _:triplePattern.\n"
++ "_:triplePattern hydra:template \""+uri+"s{s}p{p}o{o}.ttl\";\n"
++ "    hydra:mapping _:subject, _:predicate, _:object.\n"
++ "_:subject hydra:variable \"s\";\n"
++ "    hydra:property rdf:subject.\n"
++ "_:predicate hydra:variable \"p\";\n"
++ "    hydra:property rdf:predicate.\n"
++ "_:object hydra:variable \"o\";\n"
++ "    hydra:property rdf:object\n"
++ "    .\n"
++ "\n"
++ "<"+uri + fileName+"> \n"
++ "    a hydra:Collection, hydra:PagedCollection;\n"
++ "    dcterms:source :a;\n"
++ "    hydra:totalItems \"53\"^^xsd:integer;\n"
++ "    void:triples \"53\"^^xsd:integer;\n"
++ "    hydra:itemsPerPage \"100\"^^xsd:integer\n"
++ "    .\n";
+        return dataToWrite;
     }
     
     static class FilterSinkRDF extends StreamRDFBase

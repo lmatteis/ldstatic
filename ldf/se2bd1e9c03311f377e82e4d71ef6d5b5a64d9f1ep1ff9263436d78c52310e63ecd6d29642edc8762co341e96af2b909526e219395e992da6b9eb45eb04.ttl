@@ -1,1 +1,30 @@
 <http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/10/swap/pim/contact#familyName> "van der Hiel" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix hydra: <http://www.w3.org/ns/hydra/core#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://foo.org/>.
+
+:a a void:Dataset, hydra:Collection;
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/se2bd1e9c03311f377e82e4d71ef6d5b5a64d9f1ep1ff9263436d78c52310e63ecd6d29642edc8762co341e96af2b909526e219395e992da6b9eb45eb04.ttl>;
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:search _:triplePattern.
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:mapping _:subject, _:predicate, _:object.
+_:subject hydra:variable "s";
+    hydra:property rdf:subject.
+_:predicate hydra:variable "p";
+    hydra:property rdf:predicate.
+_:object hydra:variable "o";
+    hydra:property rdf:object
+    .
+
+<http://lmatteis.github.io/ldstatic/ldf/se2bd1e9c03311f377e82e4d71ef6d5b5a64d9f1ep1ff9263436d78c52310e63ecd6d29642edc8762co341e96af2b909526e219395e992da6b9eb45eb04.ttl> 
+    a hydra:Collection, hydra:PagedCollection;
+    dcterms:source :a;
+    hydra:totalItems "53"^^xsd:integer;
+    void:triples "53"^^xsd:integer;
+    hydra:itemsPerPage "100"^^xsd:integer
+    .

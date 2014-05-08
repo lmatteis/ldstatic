@@ -5,9 +5,9 @@
 @prefix : <http://foo.org/>.
 
 :a a void:Dataset, hydra:Collection;
-    void:uriLookupEndpoint "ldf/s{s}p{p}o{o}.ttl";
+    void:uriLookupEndpoint "http://192.168.20.251/~lucamatteis/ldstatic/ldf/s{s}p{p}o{o}.ttl";
     hydra:search _:triplePattern.
-_:triplePattern hydra:template "ldf/s{s}p{p}o{o}.ttl";
+_:triplePattern hydra:template "http://192.168.20.251/~lucamatteis/ldstatic/ldf/s{s}p{p}o{o}.ttl";
     hydra:mapping _:subject, _:predicate, _:object.
 _:subject hydra:variable "s";
     hydra:property rdf:subject.

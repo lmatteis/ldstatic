@@ -2,3 +2,32 @@
 <http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2002/07/owl#sameAs> <http://danbri.org/foaf.rdf#danbri> .
 <http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/dblp/resource/person/336851> .
 <http://my.opera.com/danbri/xml/foaf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "70c053d15de49ff03a1bcc374e4119b40798a66e" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix hydra: <http://www.w3.org/ns/hydra/core#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://foo.org/>.
+
+:a a void:Dataset, hydra:Collection;
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/s3be9e4678a3bb4f5a0493511e50206e086343b3dpo.ttl>;
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:search _:triplePattern.
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:mapping _:subject, _:predicate, _:object.
+_:subject hydra:variable "s";
+    hydra:property rdf:subject.
+_:predicate hydra:variable "p";
+    hydra:property rdf:predicate.
+_:object hydra:variable "o";
+    hydra:property rdf:object
+    .
+
+<http://lmatteis.github.io/ldstatic/ldf/s3be9e4678a3bb4f5a0493511e50206e086343b3dpo.ttl> 
+    a hydra:Collection, hydra:PagedCollection;
+    dcterms:source :a;
+    hydra:totalItems "53"^^xsd:integer;
+    void:triples "53"^^xsd:integer;
+    hydra:itemsPerPage "100"^^xsd:integer
+    .

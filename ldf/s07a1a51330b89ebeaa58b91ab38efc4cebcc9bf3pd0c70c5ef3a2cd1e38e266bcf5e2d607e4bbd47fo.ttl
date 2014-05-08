@@ -1,0 +1,30 @@
+_:BX2D125000aeX3A145dc5cac5aX3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny Ayers" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix hydra: <http://www.w3.org/ns/hydra/core#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://foo.org/>.
+
+:a a void:Dataset, hydra:Collection;
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/s07a1a51330b89ebeaa58b91ab38efc4cebcc9bf3pd0c70c5ef3a2cd1e38e266bcf5e2d607e4bbd47fo.ttl>;
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:search _:triplePattern.
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:mapping _:subject, _:predicate, _:object.
+_:subject hydra:variable "s";
+    hydra:property rdf:subject.
+_:predicate hydra:variable "p";
+    hydra:property rdf:predicate.
+_:object hydra:variable "o";
+    hydra:property rdf:object
+    .
+
+<http://lmatteis.github.io/ldstatic/ldf/s07a1a51330b89ebeaa58b91ab38efc4cebcc9bf3pd0c70c5ef3a2cd1e38e266bcf5e2d607e4bbd47fo.ttl> 
+    a hydra:Collection, hydra:PagedCollection;
+    dcterms:source :a;
+    hydra:totalItems "53"^^xsd:integer;
+    void:triples "53"^^xsd:integer;
+    hydra:itemsPerPage "100"^^xsd:integer
+    .

@@ -1,1 +1,30 @@
 <http://myopenlink.net/dataspace/person/kidehen#this> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix hydra: <http://www.w3.org/ns/hydra/core#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://foo.org/>.
+
+:a a void:Dataset, hydra:Collection;
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/s873feebc5aed6e150454980be54afe16b9da0375p3c197cb1f6842dc41aa48dc8b9032284bcf39a27oeb22edbbf1e4a0cbc694914014399e4c66ebe21c.ttl>;
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:search _:triplePattern.
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    hydra:mapping _:subject, _:predicate, _:object.
+_:subject hydra:variable "s";
+    hydra:property rdf:subject.
+_:predicate hydra:variable "p";
+    hydra:property rdf:predicate.
+_:object hydra:variable "o";
+    hydra:property rdf:object
+    .
+
+<http://lmatteis.github.io/ldstatic/ldf/s873feebc5aed6e150454980be54afe16b9da0375p3c197cb1f6842dc41aa48dc8b9032284bcf39a27oeb22edbbf1e4a0cbc694914014399e4c66ebe21c.ttl> 
+    a hydra:Collection, hydra:PagedCollection;
+    dcterms:source :a;
+    hydra:totalItems "53"^^xsd:integer;
+    void:triples "53"^^xsd:integer;
+    hydra:itemsPerPage "100"^^xsd:integer
+    .

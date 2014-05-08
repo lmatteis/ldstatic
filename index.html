@@ -9,7 +9,7 @@
   <script src="scripts/ldf-client-ui.js"></script>
   <script>
     // Set the configuration of the Linked Data Fragments Client.
-    var ldfConfig = { startFragment: 'index.ttl',
+    var ldfConfig = { startFragment: 'ldf/start.ttl',
                       prefixes: { dbpedia: 'http://dbpedia.org/resource/' } };
     // Activate the UI for the .ldf-client element on load.
     jQuery(function ($) {
@@ -28,11 +28,14 @@ Currently the data being served is compiled from this <a href="foaf.rdf">foaf.rd
   </p>
   <fieldset class="ldf-client">
     <textarea class="query">
-SELECT ?s ?p ?o WHERE {
-    ?s ?p ?o
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+
+SELECT * WHERE {
+    ?tim a foaf:Person; 
+            foaf:name "Tim Berners-Lee" ;
+            foaf:knows ?knows .
+    ?knows foaf:name ?knowsName .
 }
-        
-    
     </textarea>
     <button class="execute">Execute query</button>
     <pre class="results"></pre>
