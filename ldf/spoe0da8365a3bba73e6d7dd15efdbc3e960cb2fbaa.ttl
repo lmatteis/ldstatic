@@ -1,0 +1,1 @@
+<http://www.cs.umd.edu/~hendler/2003/foaf.rdf#jhendler> <http://xmlns.com/foaf/0.1/name> "Jim Hendler" .

@@ -1,0 +1,3 @@
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "5ac8032d5f6012aa1775ea2f63e1676bafd5e80b" .
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "c21b7ed00d78a35efcd8e567f8fd9cca71058c5" .
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "eccd01ba8ce2391a439e9b052a9fbf37eae9f732" .

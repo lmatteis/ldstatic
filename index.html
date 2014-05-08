@@ -9,7 +9,7 @@
   <script src="scripts/ldf-client-ui.js"></script>
   <script>
     // Set the configuration of the Linked Data Fragments Client.
-    var ldfConfig = { startFragment: 'ldf/index.ttl',
+    var ldfConfig = { startFragment: 'index.ttl',
                       prefixes: { dbpedia: 'http://dbpedia.org/resource/' } };
     // Activate the UI for the .ldf-client element on load.
     jQuery(function ($) {
@@ -23,9 +23,12 @@
   <p>
   For information about the project, check out the Github page: <a href="https://github.com/lmatteis/ldstatic">https://github.com/lmatteis/ldstatic</a>
   </p>
+  <p>
+Currently the data being served is compiled from this <a href="foaf.rdf">foaf.rdf</a> file.
+  </p>
   <fieldset class="ldf-client">
     <textarea class="query">
-SELECT ?p ?o WHERE {
+SELECT ?s ?p ?o WHERE {
     ?s ?p ?o
 }
         

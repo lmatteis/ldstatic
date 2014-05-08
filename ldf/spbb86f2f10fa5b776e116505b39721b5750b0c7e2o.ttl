@@ -1,0 +1,7 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://xmlns.com/foaf/0.1/img> <http://swordfish.rdfweb.org/~libby/libby.jpg> .
+<http://dbpedia.org/resource/John_Gage> <http://xmlns.com/foaf/0.1/img> <http://upload.wikimedia.org/wikipedia/commons/d/de/John_Gage.jpg> .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://xmlns.com/foaf/0.1/img> <http://transliteracies.english.ucsb.edu/images/participants/t/brown-john-seely-2.jpg> .
+<http://rit.mellon.org/Members/ihf/foaf.rdf#me> <http://xmlns.com/foaf/0.1/img> <http://www.sun.com/products-n-solutions/edu/images/jelc/fuchs.jpg> .
+<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/img> <http://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/img> <http://www.ilrt.bristol.ac.uk/people/cmdjb/events/dc7/orig/eric.png> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/img> <http://www.oclc.org/~emiller/capture.jpg> .

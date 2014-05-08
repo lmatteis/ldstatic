@@ -1,0 +1,8 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://heddley.com/edd/foaf.rdf> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/homepage> <http://heddley.com/edd/> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/mbox> <mailto:edd@usefulinc.com> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/mbox> <mailto:edd@xml.com> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/mbox> <mailto:edd@xmlhack.com> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/name> "Edd Dumbill" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/nick> "edd" .

@@ -1,0 +1,5 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://www.w3.org/2002/07/owl#sameAs> <http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://xmlns.com/foaf/0.1/img> <http://swordfish.rdfweb.org/~libby/libby.jpg> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://xmlns.com/foaf/0.1/mbox> <mailto:libby.miller@bristol.ac.uk> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://xmlns.com/foaf/0.1/name> "Libby Miller" .

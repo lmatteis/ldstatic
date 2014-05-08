@@ -1,0 +1,2 @@
+<http://people.csail.mit.edu/lkagal/foaf#me> <http://xmlns.com/foaf/0.1/mailbox> <mailto:lalana@csail.mit.edu> .
+<http://www.dajobe.org/foaf.rdf#i> <http://xmlns.com/foaf/0.1/mailbox> <mailto:dave@dajobe.org> .

@@ -1,0 +1,7 @@
+<http://www.w3.org/People/EM/contact#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.w3.org/People/EM/contact#me> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/People/EM/contact> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/homepage> <http://purl.org/net/eric/> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/img> <http://www.ilrt.bristol.ac.uk/people/cmdjb/events/dc7/orig/eric.png> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/img> <http://www.oclc.org/~emiller/capture.jpg> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/mbox> <mailto:em@w3.org> .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/name> "Eric Miller" .

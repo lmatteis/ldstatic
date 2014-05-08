@@ -1,0 +1,3 @@
+<http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#panel-panelk01> <http://www.w3.org/2000/01/rdf-schema#label> "The Next Wave of the Web (Plenary Panel)" .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/01/rdf-schema#label> "Amy van der Hiel" .
+<http://www.w3.org/data#W3C> <http://www.w3.org/2000/01/rdf-schema#label> "W3C" .

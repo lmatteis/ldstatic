@@ -1,0 +1,53 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#cm> <http://xmlns.com/foaf/0.1/name> "Coralie Mercier" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://xmlns.com/foaf/0.1/name> "Dean Jackson" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/name> "Edd Dumbill" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://xmlns.com/foaf/0.1/name> "Libby Miller" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#ss> <http://xmlns.com/foaf/0.1/name> "Susie Stephens" .
+<http://bblfish.net/people/henry/card#me> <http://xmlns.com/foaf/0.1/name> "Henry Story" .
+<http://dbpedia.org/resource/John_Gage> <http://xmlns.com/foaf/0.1/name> "John Gage" .
+<http://dbpedia.org/resource/John_Klensin> <http://xmlns.com/foaf/0.1/name> "John Klensin" .
+<http://dbpedia.org/resource/John_Markoff> <http://xmlns.com/foaf/0.1/name> "John Markoff" .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://xmlns.com/foaf/0.1/name> "John Seely Brown" .
+<http://dbpedia.org/resource/Tim_Bray> <http://xmlns.com/foaf/0.1/name> "Tim Bray" .
+<http://dig.csail.mit.edu/2007/wiki/people/JoeLambda#JL> <http://xmlns.com/foaf/0.1/name> "Joe Lambda" .
+<http://dig.csail.mit.edu/2007/wiki/people/RobertHoffmann#RMH> <http://xmlns.com/foaf/0.1/name> "Robert Hoffmann" .
+<http://eikeon.com/foaf.rdf#eikeon> <http://xmlns.com/foaf/0.1/name> "Daniel Krech" .
+<http://hometown.aol.com/chbussler/foaf/chbussler.foaf#me> <http://xmlns.com/foaf/0.1/name> "Christoph Bussler" .
+<http://id.ecs.soton.ac.uk/person/1269> <http://xmlns.com/foaf/0.1/name> "Nicholas Gibbins" .
+<http://id.ecs.soton.ac.uk/person/1650> <http://xmlns.com/foaf/0.1/name> "Wendy Hall" .
+<http://id.ecs.soton.ac.uk/person/2686> <http://xmlns.com/foaf/0.1/name> "Nigel Shadbolt" .
+<http://id.ecs.soton.ac.uk/person/60> <http://xmlns.com/foaf/0.1/name> "Les Carr" .
+<http://inamidst.com/sbp/foaf#Sean> <http://xmlns.com/foaf/0.1/name> "Sean Palmer" .
+<http://my.opera.com/chaals/xml/foaf#me> <http://xmlns.com/foaf/0.1/name> "Charles McCathieNevile" .
+<http://my.opera.com/howcome/xml/foaf#howcome> <http://xmlns.com/foaf/0.1/name> "Håkon Wium Lie" .
+<http://myopenlink.net/dataspace/person/kidehen#this> <http://xmlns.com/foaf/0.1/name> "Kingsley Idehen" .
+<http://norman.walsh.name/knows/who#norman-walsh> <http://xmlns.com/foaf/0.1/name> "Norman Walsh" .
+<http://people.apache.org/~oshani/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Oshani Seneviratne" .
+<http://people.csail.mit.edu/lkagal/foaf#me> <http://xmlns.com/foaf/0.1/name> "Lalana Kagal" .
+<http://people.csail.mit.edu/psz/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Peter Szolovits" .
+<http://people.w3.org/simon/foaf#i> <http://xmlns.com/foaf/0.1/name> "Simon J. Hernandez" .
+<http://qdos.com/people/tom.xrdf#me> <http://xmlns.com/foaf/0.1/name> "Tom Ilube" .
+<http://research.microsoft.com/~henrikn/foaf.xml#me> <http://xmlns.com/foaf/0.1/name> "Henrik Nielsen" .
+<http://rit.mellon.org/Members/ihf/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ira Fuchs" .
+<http://teole.jfouffa.org/People/Teole/card.rdf#me> <http://xmlns.com/foaf/0.1/name> "Philippe Le Hégaret" .
+<http://users.ecs.soton.ac.uk/mc/mcfoaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "mc schraefel" .
+<http://web.mit.edu/shinnyih/foaf.rdf#> <http://xmlns.com/foaf/0.1/name> "Shinnyih Huang" .
+<http://www.aaronsw.com/about.xrdf#aaronsw> <http://xmlns.com/foaf/0.1/name> "Aaron Swartz" .
+<http://www.cambridgesemantics.com/people/about/lee> <http://xmlns.com/foaf/0.1/name> "Lee Feigenbaum" .
+<http://www.cs.umd.edu/~hendler/2003/foaf.rdf#jhendler> <http://xmlns.com/foaf/0.1/name> "Jim Hendler" .
+<http://www.dajobe.org/foaf.rdf#i> <http://xmlns.com/foaf/0.1/name> "Dave Beckett" .
+<http://www.isi.edu/~gil/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Yolanda Gill" .
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ivan Herman" .
+<http://www.kjetil.kjernsmo.net/foaf#me> <http://xmlns.com/foaf/0.1/name> "Kjetil Kjernsmo" .
+<http://www.lassila.org/ora.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ora Lassila" .
+<http://www.mindswap.org/2004/owl/mindswappers#Bijan.Parsia> <http://xmlns.com/foaf/0.1/name> "Bijan Parsia" .
+<http://www.mindswap.org/2004/owl/mindswappers#Jennifer.Golbeck> <http://xmlns.com/foaf/0.1/name> "Jennifer Golbeck" .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://xmlns.com/foaf/0.1/name> "Amy van der Hiel" .
+<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/name> "Tim Berners-Lee" .
+_:BX2D984550bX3A145db7aedbeX3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny Ayers" .
+<http://www.w3.org/People/Connolly/#me> <http://xmlns.com/foaf/0.1/name> "Dan Connolly" .
+<http://www.w3.org/People/EM/contact#me> <http://xmlns.com/foaf/0.1/name> "Eric Miller" .
+<http://www.w3.org/People/Jacobs/contact.rdf#IanJacobs> <http://xmlns.com/foaf/0.1/name> "Ian Jacobs" .
+<http://www.w3.org/People/djweitzner/foaf#DJW> <http://xmlns.com/foaf/0.1/name> "Daniel J Weitzner" .
+<http://www.w3.org/People/karl/karl-foaf.xrdf#me> <http://xmlns.com/foaf/0.1/name> "Karl Dubost" .
+<http://www.w3.org/data#W3C> <http://xmlns.com/foaf/0.1/name> "World Wide Web Consortium" .

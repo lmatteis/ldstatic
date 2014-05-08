@@ -1,0 +1,3 @@
+<http://people.csail.mit.edu/lkagal/foaf#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://people.csail.mit.edu/lkagal/foaf#me> <http://xmlns.com/foaf/0.1/mailbox> <mailto:lalana@csail.mit.edu> .
+<http://people.csail.mit.edu/lkagal/foaf#me> <http://xmlns.com/foaf/0.1/name> "Lalana Kagal" .

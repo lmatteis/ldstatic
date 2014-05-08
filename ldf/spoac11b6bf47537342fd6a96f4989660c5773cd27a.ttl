@@ -1,0 +1,2 @@
+<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> <http://www.aaronsw.com/about.xrdf#aaronsw> .
+<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> <http://www.aaronsw.com/about.xrdf#aaronsw> .

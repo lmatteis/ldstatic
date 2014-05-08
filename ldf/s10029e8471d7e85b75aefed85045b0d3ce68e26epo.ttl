@@ -1,0 +1,5 @@
+<http://dbpedia.org/resource/John_Seely_Brown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/bookmashup/persons/John+Seely+Brown> .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://xmlns.com/foaf/0.1/homepage> <http://www.johnseelybrown.com/> .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://xmlns.com/foaf/0.1/img> <http://transliteracies.english.ucsb.edu/images/participants/t/brown-john-seely-2.jpg> .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://xmlns.com/foaf/0.1/name> "John Seely Brown" .

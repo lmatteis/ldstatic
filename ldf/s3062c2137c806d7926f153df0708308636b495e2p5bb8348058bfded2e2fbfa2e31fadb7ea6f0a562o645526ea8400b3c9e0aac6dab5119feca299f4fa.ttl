@@ -1,0 +1,1 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf> <http://purl.org/dc/elements/1.1/title> "Tim Berners-Lee's FOAF file" .

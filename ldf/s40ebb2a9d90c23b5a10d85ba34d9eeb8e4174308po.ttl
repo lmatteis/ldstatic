@@ -1,0 +1,2 @@
+<http://wiki.ontoworld.org/index.php/_IRW2006> <http://purl.org/dc/elements/1.1/title> "Identity, Reference and the Web workshop 2006" .
+<http://wiki.ontoworld.org/index.php/_IRW2006> <http://www.w3.org/2000/10/swap/pim/contact#participant> <http://www.w3.org/People/Berners-Lee/card#i> .

@@ -1,0 +1,6 @@
+<http://www.w3.org/data#W3C> <http://www.w3.org/2000/01/rdf-schema#label> "W3C" .
+<http://www.w3.org/data#W3C> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dig.csail.mit.edu/2008/2002/01/tr-automation/tr.rdf> .
+<http://www.w3.org/data#W3C> <http://www.w3.org/2000/10/swap/pim/contact#publicHomePage> <http://www.w3.org/> .
+<http://www.w3.org/data#W3C> <http://xmlns.com/foaf/0.1/homepage> <http://dig.csail.mit.edu/2008/> .
+<http://www.w3.org/data#W3C> <http://xmlns.com/foaf/0.1/logo> <http://dig.csail.mit.edu/2008/Icons/w3c_home> .
+<http://www.w3.org/data#W3C> <http://xmlns.com/foaf/0.1/name> "World Wide Web Consortium" .

@@ -1,0 +1,2 @@
+<http://dig.csail.mit.edu/2007/wiki/people/RobertHoffmann#RMH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dig.csail.mit.edu/2007/wiki/people/RobertHoffmann#RMH> <http://xmlns.com/foaf/0.1/name> "Robert Hoffmann" .

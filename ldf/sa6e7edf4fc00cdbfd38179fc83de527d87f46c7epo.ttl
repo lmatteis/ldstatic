@@ -1,0 +1,4 @@
+<http://rit.mellon.org/Members/ihf/foaf.rdf#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://rit.mellon.org/Members/ihf/foaf.rdf#me> <http://xmlns.com/foaf/0.1/homepage> <http://www.mellon.org/about_foundation/staff/program-area-staff/irafuchs> .
+<http://rit.mellon.org/Members/ihf/foaf.rdf#me> <http://xmlns.com/foaf/0.1/img> <http://www.sun.com/products-n-solutions/edu/images/jelc/fuchs.jpg> .
+<http://rit.mellon.org/Members/ihf/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ira Fuchs" .

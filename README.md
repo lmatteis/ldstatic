@@ -1,4 +1,4 @@
 ldstatic
 ========
 
-Host your Linked Data for free, as static pages, using a variety of providers (GitHub Pages, Google Code, Google Drive, etc.)
+To run simply do `sh build.sh yourData.ttl`. It will parse the file and create stat Turtle pages inside the `ldf/` directory.

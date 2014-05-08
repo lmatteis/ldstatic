@@ -1,0 +1,4 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://www.w3.org/2002/07/owl#sameAs> <http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me> .
+<http://dbpedia.org/resource/John_Seely_Brown> <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/bookmashup/persons/John+Seely+Brown> .
+<http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2002/07/owl#sameAs> <http://danbri.org/foaf.rdf#danbri> .
+<http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/dblp/resource/person/336851> .

@@ -1,0 +1,3 @@
+<http://dbpedia.org/resource/John_Gage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/John_Gage> <http://xmlns.com/foaf/0.1/img> <http://upload.wikimedia.org/wikipedia/commons/d/de/John_Gage.jpg> .
+<http://dbpedia.org/resource/John_Gage> <http://xmlns.com/foaf/0.1/name> "John Gage" .

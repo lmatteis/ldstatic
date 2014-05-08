@@ -1,0 +1,1 @@
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ivan Herman" .

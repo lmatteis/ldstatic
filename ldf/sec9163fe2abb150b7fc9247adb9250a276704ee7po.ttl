@@ -1,0 +1,2 @@
+<http://dig.csail.mit.edu/2007/wiki/people/JoeLambda#JL> <http://xmlns.com/foaf/0.1/firstName> "Joe" .
+<http://dig.csail.mit.edu/2007/wiki/people/JoeLambda#JL> <http://xmlns.com/foaf/0.1/name> "Joe Lambda" .

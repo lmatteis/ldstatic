@@ -1,0 +1,1 @@
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://people.w3.org/amy/foaf.rdf> .

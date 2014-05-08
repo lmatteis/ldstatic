@@ -1,0 +1,2 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#ss> <http://xmlns.com/foaf/0.1/name> "Susie Stephens" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#ss> <http://xmlns.com/foaf/0.1/organization> <http://dbpedia.org/resource/Eli_Lilly_and_Company> .

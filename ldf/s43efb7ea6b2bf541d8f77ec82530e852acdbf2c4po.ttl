@@ -1,0 +1,3 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#cm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#cm> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.koalie.net/foaf.rdf> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#cm> <http://xmlns.com/foaf/0.1/name> "Coralie Mercier" .

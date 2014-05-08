@@ -41,7 +41,7 @@ public class Parser
 {
     public static void main(String...argv)
     {
-        String filename = "data.ttl" ;
+        String filename = argv[0];
 
         // This is the heart of N-triples printing ... outoput is heavily buffered
         // so the FilterSinkRDF called flush at the end of parsing.

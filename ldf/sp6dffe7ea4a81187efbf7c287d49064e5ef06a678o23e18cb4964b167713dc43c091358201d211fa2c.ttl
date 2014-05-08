@@ -1,0 +1,3 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf> <http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/People/Berners-Lee/card#i> .
+<http://dig.csail.mit.edu/2007/01/camp/data#course> <http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/People/Berners-Lee/card#i> .
+<http://dig.csail.mit.edu/breadcrumbs/blog/4> <http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/People/Berners-Lee/card#i> .

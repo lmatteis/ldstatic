@@ -1,2 +1,0 @@
-<http://www.genesys-pgr.org/> <http://purl.org/dc/terms/title> "GeneSys"@en .
-<http://data.bioversityinternational.org/collectingmissions/> <http://purl.org/dc/terms/title> "Bioversity Collecting Missions"@en .

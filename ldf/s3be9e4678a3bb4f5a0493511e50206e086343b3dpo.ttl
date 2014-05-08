@@ -1,0 +1,4 @@
+<http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://danbri.livejournal.com/data/foaf> .
+<http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2002/07/owl#sameAs> <http://danbri.org/foaf.rdf#danbri> .
+<http://my.opera.com/danbri/xml/foaf#me> <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/dblp/resource/person/336851> .
+<http://my.opera.com/danbri/xml/foaf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "70c053d15de49ff03a1bcc374e4119b40798a66e" .

@@ -1,0 +1,2 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://xmlns.com/foaf/0.1/nick> "edd" .
+<http://www.w3.org/People/Connolly/#me> <http://xmlns.com/foaf/0.1/nick> "DanCon" .

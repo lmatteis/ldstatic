@@ -1,6 +1,0 @@
-<http://www.genesys-pgr.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
-<http://www.genesys-pgr.org/> <http://xmlns.com/foaf/0.1/homepage> <http://www.genesys-pgr.org/> .
-<http://www.genesys-pgr.org/> <http://purl.org/dc/terms/title> "GeneSys"@en .
-<http://www.genesys-pgr.org/> <http://purl.org/dc/terms/description> "Genesys is a global portal to information about \n    plant genetic resources for food and agriculture."@en .
-<http://www.genesys-pgr.org/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/genesys-scraped/> .
-<http://www.genesys-pgr.org/> <http://rdfs.org/ns/void#triples> "13354152"^^<http://www.w3.org/2001/XMLSchema#integer> .

@@ -1,0 +1,8 @@
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/01/rdf-schema#label> "Amy van der Hiel" .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://people.w3.org/amy/foaf.rdf> .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/10/swap/pim/contact#familyName> "van der Hiel" .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://www.w3.org/2000/10/swap/pim/contact#givenName> "Amy" .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://xmlns.com/foaf/0.1/mbox> <mailto:amy@w3.org> .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "1839a1cc2e719a85ea7d9007f587b2899cd94064" .
+<http://www.w3.org/People/Berners-Lee/card#amy> <http://xmlns.com/foaf/0.1/name> "Amy van der Hiel" .

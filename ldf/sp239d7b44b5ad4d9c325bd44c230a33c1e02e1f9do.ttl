@@ -1,2 +1,0 @@
-<http://www.genesys-pgr.org/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/genesys-scraped/> .
-<http://data.bioversityinternational.org/collectingmissions/> <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.bioversityinternational.org/collectingmissions/> .

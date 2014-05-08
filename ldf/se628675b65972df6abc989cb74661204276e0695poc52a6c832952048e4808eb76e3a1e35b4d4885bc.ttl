@@ -1,0 +1,1 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://xmlns.com/foaf/0.1/name> "Libby Miller" .

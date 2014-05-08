@@ -1,0 +1,2 @@
+<http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#panel-panelk01> <http://www.w3.org/2000/01/rdf-schema#label> "The Next Wave of the Web (Plenary Panel)" .
+<http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#panel-panelk01> <http://www.w3.org/2000/10/swap/pim/contact#participant> <http://www.w3.org/People/Berners-Lee/card#i> .

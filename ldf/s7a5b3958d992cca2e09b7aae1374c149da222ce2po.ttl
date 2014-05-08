@@ -1,0 +1,7 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.grorg.org/dean/foaf.rdf> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://xmlns.com/foaf/0.1/homepage> <http://www.grorg.org/dean/> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://xmlns.com/foaf/0.1/mbox> <mailto:dean@w3.org> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://xmlns.com/foaf/0.1/mbox> <mailto:dino@grorg.org> .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "6de4ff27ef927b9ba21ccc88257e41a2d7e7d293" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#dj> <http://xmlns.com/foaf/0.1/name> "Dean Jackson" .

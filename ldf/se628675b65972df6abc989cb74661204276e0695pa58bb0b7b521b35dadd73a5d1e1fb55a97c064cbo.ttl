@@ -1,0 +1,1 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#libby> <http://www.w3.org/2002/07/owl#sameAs> <http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me> .

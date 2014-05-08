@@ -1,0 +1,5 @@
+<http://dig.csail.mit.edu/2008/2002/01/tr-automation/tr.rdf> <http://purl.org/dc/elements/1.1/title> "W3C Standards and Technical Reports" .
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf> <http://purl.org/dc/elements/1.1/title> "Tim Berners-Lee's FOAF file" .
+<http://dig.csail.mit.edu/breadcrumbs/blog/4> <http://purl.org/dc/elements/1.1/title> "timbl's blog" .
+<http://wiki.ontoworld.org/index.php/_IRW2006> <http://purl.org/dc/elements/1.1/title> "Identity, Reference and the Web workshop 2006" .
+<http://www4.wiwiss.fu-berlin.de/booksMeshup/books/006251587X> <http://purl.org/dc/elements/1.1/title> "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web" .

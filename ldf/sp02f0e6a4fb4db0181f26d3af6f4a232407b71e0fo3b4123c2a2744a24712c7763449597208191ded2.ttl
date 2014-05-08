@@ -1,0 +1,1 @@
+<http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf#edd> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://heddley.com/edd/foaf.rdf> .
