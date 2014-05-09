@@ -1,0 +1,33 @@
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "5ac8032d5f6012aa1775ea2f63e1676bafd5e80b" .
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "c21b7ed00d78a35efcd8e567f8fd9cca71058c5" .
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "eccd01ba8ce2391a439e9b052a9fbf37eae9f732" .
+<http://www.ivan-herman.net/foaf.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ivan Herman" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix hydra: <http://www.w3.org/ns/hydra/core#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://foo.org/>.
+
+:a a void:Dataset, hydra:Collection;
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/seecc3f8246/701396acf3/eeb9d9c34b/4ec672a79cpo.ttl>;
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{+s}p{+p}o{+o}.ttl";
+    hydra:search _:triplePattern.
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{+s}p{+p}o{+o}.ttl";
+    hydra:mapping _:subject, _:predicate, _:object.
+_:subject hydra:variable "s";
+    hydra:property rdf:subject.
+_:predicate hydra:variable "p";
+    hydra:property rdf:predicate.
+_:object hydra:variable "o";
+    hydra:property rdf:object
+    .
+
+<http://lmatteis.github.io/ldstatic/ldf/seecc3f8246/701396acf3/eeb9d9c34b/4ec672a79cpo.ttl> 
+    a hydra:Collection, hydra:PagedCollection;
+    dcterms:source :a;
+    hydra:totalItems "4"^^xsd:integer;
+    void:triples "4"^^xsd:integer;
+    hydra:itemsPerPage "4"^^xsd:integer
+    .

@@ -180,11 +180,11 @@
 <http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/People/Jacobs/contact.rdf#IanJacobs> .
 <http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/People/djweitzner/foaf#DJW> .
 <http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/People/karl/karl-foaf.xrdf#me> .
-<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> _:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff .
-_:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-_:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dannyayers.com/me.rdf> .
-_:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://xmlns.com/foaf/0.1/mbox_sha1sum> "669fe353dbef63d12ba11f69ace8acbec1ac8b17" .
-_:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny Ayers" .
+<http://www.w3.org/People/Berners-Lee/card#i> <http://xmlns.com/foaf/0.1/knows> _:BX2D5a9d2f07X3A145e1960076X3AX2D7fff .
+_:BX2D5a9d2f07X3A145e1960076X3AX2D7fff <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:BX2D5a9d2f07X3A145e1960076X3AX2D7fff <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dannyayers.com/me.rdf> .
+_:BX2D5a9d2f07X3A145e1960076X3AX2D7fff <http://xmlns.com/foaf/0.1/mbox_sha1sum> "669fe353dbef63d12ba11f69ace8acbec1ac8b17" .
+_:BX2D5a9d2f07X3A145e1960076X3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny Ayers" .
 <http://www.w3.org/People/Connolly/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://www.w3.org/People/Connolly/#me> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/People/Connolly/home-smart.rdf> .
 <http://www.w3.org/People/Connolly/#me> <http://xmlns.com/foaf/0.1/mbox> <mailto:connolly@w3.org> .
@@ -222,9 +222,9 @@ _:BX2D6cbb2f9cX3A145dc6eff21X3AX2D7fff <http://xmlns.com/foaf/0.1/name> "Danny A
 
 :a a void:Dataset, hydra:Collection;
     void:subset <http://lmatteis.github.io/ldstatic/ldf/spo.ttl>;
-    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{+s}p{+p}o{+o}.ttl";
     hydra:search _:triplePattern.
-_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{+s}p{+p}o{+o}.ttl";
     hydra:mapping _:subject, _:predicate, _:object.
 _:subject hydra:variable "s";
     hydra:property rdf:subject.

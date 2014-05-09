@@ -7,10 +7,10 @@
 @prefix : <http://foo.org/>.
 
 :a a void:Dataset, hydra:Collection;
-    void:subset <http://lmatteis.github.io/ldstatic/ldf/start.ttl>;
-    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+    void:subset <http://lmatteis.github.io/ldstatic/ldf/null>;
+    void:uriLookupEndpoint "http://lmatteis.github.io/ldstatic/ldf/s{+s}p{+p}o{+o}.ttl";
     hydra:search _:triplePattern.
-_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{s}p{p}o{o}.ttl";
+_:triplePattern hydra:template "http://lmatteis.github.io/ldstatic/ldf/s{+s}p{+p}o{+o}.ttl";
     hydra:mapping _:subject, _:predicate, _:object.
 _:subject hydra:variable "s";
     hydra:property rdf:subject.
@@ -20,7 +20,7 @@ _:object hydra:variable "o";
     hydra:property rdf:object
     .
 
-<http://lmatteis.github.io/ldstatic/ldf/start.ttl> 
+<http://lmatteis.github.io/ldstatic/ldf/null> 
     a hydra:Collection, hydra:PagedCollection;
     dcterms:source :a;
     hydra:totalItems "0"^^xsd:integer;

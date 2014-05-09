@@ -33,6 +33,8 @@ import org.apache.jena.riot.out.*;
 import com.hp.hpl.jena.rdf.model.Property ;
 import com.hp.hpl.jena.sparql.vocabulary.FOAF ;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.*;
 import java.util.*;
 import java.net.*;
@@ -54,6 +56,8 @@ public class Parser
 
         // after all files are created add metadata and controls to each file 
         // (split into different files if necessary)
+        listFilesForFolder(new File("ldf/"), uri);
+        /*
         File dir = new File("ldf/");
         File[] directoryListing = dir.listFiles();
         for(File child : directoryListing) {
@@ -68,6 +72,10 @@ public class Parser
                try {writer.close();} catch (Exception ex) {}
             }
         }
+        */
+
+
+
         // write start.ttl as a fragment to start from
         Writer writer = null;
         try {
@@ -80,8 +88,39 @@ public class Parser
            try {writer.close();} catch (Exception ex) {}
         }
     }
+    public static void listFilesForFolder(final File folder, String uri) {
+        for (final File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                listFilesForFolder(fileEntry, uri);
+            } else {
+                //System.out.println(fileEntry.getName());
+                Writer writer = null;
+                try {
+                    FileOutputStream fileOutStream = new FileOutputStream(fileEntry, true); 
+                    writer = new BufferedWriter(new OutputStreamWriter(fileOutStream, "utf-8"));
+                    writer.write(controls(fileEntry, uri));
+                } catch (IOException ex) {
+                  // report
+                } finally {
+                   try {writer.close();} catch (Exception ex) {}
+                }
+            }
+        }
+    }
+    public static String getRelativePath(File file, File folder) {
+        String filePath = file.getAbsolutePath();
+        String folderPath = folder.getAbsolutePath();
+        if (filePath.startsWith(folderPath)) {
+            return filePath.substring(folderPath.length() + 1);
+        } else {
+            return null;
+        }
+    }
+
+
     public static String controls(File file, String uri) {
         String fileName = file.getName();
+        String filePath = getRelativePath(file, new File("ldf/"));
         int numOfLines = 0;
         try {
             LineNumberReader lnr = new LineNumberReader(new FileReader(file));
@@ -101,10 +140,10 @@ String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 + "@prefix : <http://foo.org/>.\n"
 + "\n"
 + ":a a void:Dataset, hydra:Collection;\n"
-+ "    void:subset <"+uri+fileName+">;\n"
-+ "    void:uriLookupEndpoint \""+uri+"s{s}p{p}o{o}.ttl\";\n"
++ "    void:subset <"+uri+filePath+">;\n"
++ "    void:uriLookupEndpoint \""+uri+"s{+s}p{+p}o{+o}.ttl\";\n"
 + "    hydra:search _:triplePattern.\n"
-+ "_:triplePattern hydra:template \""+uri+"s{s}p{p}o{o}.ttl\";\n"
++ "_:triplePattern hydra:template \""+uri+"s{+s}p{+p}o{+o}.ttl\";\n"
 + "    hydra:mapping _:subject, _:predicate, _:object.\n"
 + "_:subject hydra:variable \"s\";\n"
 + "    hydra:property rdf:subject.\n"
@@ -114,7 +153,7 @@ String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 + "    hydra:property rdf:object\n"
 + "    .\n"
 + "\n"
-+ "<"+uri + fileName+"> \n"
++ "<"+uri + filePath+"> \n"
 + "    a hydra:Collection, hydra:PagedCollection;\n"
 + "    dcterms:source :a;\n"
 + "    hydra:totalItems \""+numOfLines+"\"^^xsd:integer;\n"
@@ -150,23 +189,23 @@ String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             // print all combinations
             try {
                 // only subject
-                savePage("s" + sha1(subject) + "po", triple);
+                savePage("s" + transformPattern(subject) + "po", triple);
                 // subject and predicate
-                savePage("s" + sha1(subject) + "p" + sha1(predicate) + "o", triple);
+                savePage("s" + transformPattern(subject) + "p" + transformPattern(predicate) + "o", triple);
                 // subject and object
-                savePage("s" + sha1(subject) + "po" + sha1(object), triple);
+                savePage("s" + transformPattern(subject) + "po" + transformPattern(object), triple);
                 // subject, predicate and object
-                savePage("s" + sha1(subject) + "p" + sha1(predicate) + "o" + sha1(object), triple);
+                savePage("s" + transformPattern(subject) + "p" + transformPattern(predicate) + "o" + transformPattern(object), triple);
 
                 // only predicate
-                savePage("sp" + sha1(predicate) + "o", triple);
+                savePage("sp" + transformPattern(predicate) + "o", triple);
                 // predicate and subject
                 // predicate and object
-                savePage("sp" + sha1(predicate) + "o" + sha1(object), triple);
+                savePage("sp" + transformPattern(predicate) + "o" + transformPattern(object), triple);
                 // predicate, subject and object
 
                 // only object
-                savePage("spo" + sha1(object), triple);
+                savePage("spo" + transformPattern(object), triple);
                 // object and subject
                 // object and predicate
 
@@ -185,13 +224,17 @@ String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
             // N-triples.
             try {
+                File file = new File("ldf/" + filename + ".ttl");
+                file.getParentFile().mkdirs();
                 // append
-                FileOutputStream fileOutStream = new FileOutputStream("ldf/" + filename + ".ttl", true); 
+                FileOutputStream fileOutStream = new FileOutputStream(file, true); 
 
                 RDFDataMgr.writeTriples(fileOutStream, Collections.singleton(triple).iterator());
 
-            } catch (FileNotFoundException e) {
+            } catch (IOException e) {
+                // this may run if file is already open, retry!
                 out.println(e);
+            //    savePage(filename, triple);
             }
 
 
@@ -200,8 +243,12 @@ String dataToWrite = "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         private String encode(String s) throws UnsupportedEncodingException {
             return URLEncoder.encode(s, "UTF-8");
         }
-        private String sha1(String s) {
-            return DigestUtils.shaHex(s);
+        private String transformPattern(String s) {
+            // split the HASH into strings, 10 character each
+            // it's .match(/.{1,10}/g) in JavaScript
+            String hash = DigestUtils.shaHex(s);
+            String path = StringUtils.join(hash.split("(?<=\\G.{10})"), "/");
+            return path;
         }
         
         @Override
